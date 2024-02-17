@@ -37,26 +37,21 @@ Esta API permite la gestión de publicaciones (posts). Las funcionalidades princ
 `json
 {"welcome": "Welcome to my API"}
 
-### GET /posts
-```json
-Descripción: Devuelve todas las publicaciones.
-Ejemplo de respuesta: []
-```
 ### POST /posts
 Descripción: Crea una nueva publicación.
 
-```json
+`json
 {
   "title": "Título de la publicación",
   "author": "Autor de la publicación",
   "recived": "2024-02-17",
   "content": "Contenido de la publicación"
 }
-```
+`
 ### GET /posts/{post_id}
 Descripción: Devuelve una publicación específica por su ID.
 Ejemplo de respuesta:
-```json
+`json
 {
   "id": "1",
   "title": "Título de la publicación",
@@ -67,28 +62,28 @@ Ejemplo de respuesta:
   "published_at": null,
   "published": false
 }
-```
+`
 ###DELETE /posts/{post_id}
 Descripción: Elimina una publicación existente por su ID.
 Ejemplo de respuesta:
-```json
+`json
 {"message": "Post has been deleted successfully"}
-```
+`
 #### PUT /posts/{post_id}
 Descripción: Actualiza una publicación existente por su ID.
 Ejemplo de solicitud:
-```json
+`json
 {
   "title": "Nuevo título de la publicación",
   "author": "Nuevo autor de la publicación",
   "recived": "2024-02-17",
   "content": "Nuevo contenido de la publicación"
 }
-```
+`
 Ejemplo de respuesta:
-```json
+`json
 {"message": "Post has been updated successfully"}
-```
+`
 ### Contribuyendo
 Si deseas contribuir a este proyecto, puedes hacerlo libre de código
 
