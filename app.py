@@ -14,6 +14,7 @@ class Post(BaseModel):
     id: Optional[str]
     title: str
     author: str
+    recived: str
     content: Text
     created_at: datetime =  datetime.now()
     published_at: Optional[datetime] 
