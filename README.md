@@ -34,18 +34,18 @@ Esta API permite la gestión de publicaciones (posts). Las funcionalidades princ
 - Descripción: Devuelve un mensaje de bienvenida.
 - Ejemplo de respuesta:
 
-```json
+`json
 {"welcome": "Welcome to my API"}
 
 ### GET /posts
-```json
+`json
 Descripción: Devuelve todas las publicaciones.
 Ejemplo de respuesta: []
 
 ### POST /posts
 Descripción: Crea una nueva publicación.
 
-```json
+`json
 {
   "title": "Título de la publicación",
   "author": "Autor de la publicación",
